@@ -1,0 +1,98 @@
+// Weather condition codes mapping
+export const WEATHER_CODES = {
+  113: { icon: 'sun', label: 'Sunny/Clear' },
+  116: { icon: 'cloud-sun', label: 'Partly Cloudy' },
+  119: { icon: 'cloud', label: 'Cloudy' },
+  122: { icon: 'cloud', label: 'Overcast' },
+  143: { icon: 'fog', label: 'Mist' },
+  176: { icon: 'cloud-rain', label: 'Patchy Rain' },
+  179: { icon: 'snow', label: 'Patchy Snow' },
+  182: { icon: 'snow', label: 'Patchy Sleet' },
+  185: { icon: 'snow', label: 'Patchy Freezing Drizzle' },
+  200: { icon: 'cloud-lightning', label: 'Thundery Outbreaks' },
+  227: { icon: 'snow', label: 'Blowing Snow' },
+  230: { icon: 'snow', label: 'Blizzard' },
+  248: { icon: 'fog', label: 'Fog' },
+  260: { icon: 'fog', label: 'Freezing Fog' },
+  263: { icon: 'cloud-rain', label: 'Patchy Light Drizzle' },
+  266: { icon: 'cloud-rain', label: 'Light Drizzle' },
+  281: { icon: 'cloud-rain', label: 'Freezing Drizzle' },
+  284: { icon: 'cloud-rain', label: 'Heavy Freezing Drizzle' },
+  293: { icon: 'cloud-rain', label: 'Patchy Light Rain' },
+  296: { icon: 'cloud-rain', label: 'Light Rain' },
+  299: { icon: 'cloud-rain', label: 'Moderate Rain at Times' },
+  302: { icon: 'cloud-rain', label: 'Moderate Rain' },
+  305: { icon: 'cloud-rain', label: 'Heavy Rain at Times' },
+  308: { icon: 'cloud-rain', label: 'Heavy Rain' },
+  311: { icon: 'cloud-rain', label: 'Light Freezing Rain' },
+  314: { icon: 'cloud-rain', label: 'Moderate/Heavy Freezing Rain' },
+  317: { icon: 'snow', label: 'Light Sleet' },
+  320: { icon: 'snow', label: 'Moderate/Heavy Sleet' },
+  323: { icon: 'snow', label: 'Patchy Light Snow' },
+  326: { icon: 'snow', label: 'Light Snow' },
+  329: { icon: 'snow', label: 'Patchy Moderate Snow' },
+  332: { icon: 'snow', label: 'Moderate Snow' },
+  335: { icon: 'snow', label: 'Patchy Heavy Snow' },
+  338: { icon: 'snow', label: 'Heavy Snow' },
+  350: { icon: 'snow', label: 'Ice Pellets' },
+  353: { icon: 'cloud-rain', label: 'Light Rain Shower' },
+  356: { icon: 'cloud-rain', label: 'Moderate/Heavy Rain Shower' },
+  359: { icon: 'cloud-rain', label: 'Torrential Rain Shower' },
+  362: { icon: 'snow', label: 'Light Sleet Showers' },
+  365: { icon: 'snow', label: 'Moderate/Heavy Sleet Showers' },
+  368: { icon: 'snow', label: 'Light Snow Showers' },
+  371: { icon: 'snow', label: 'Moderate/Heavy Snow Showers' },
+  374: { icon: 'snow', label: 'Light Showers of Ice Pellets' },
+  377: { icon: 'snow', label: 'Moderate/Heavy Showers of Ice Pellets' },
+  386: { icon: 'cloud-lightning', label: 'Patchy Light Rain with Thunder' },
+  389: { icon: 'cloud-lightning', label: 'Moderate/Heavy Rain with Thunder' },
+  392: { icon: 'cloud-lightning', label: 'Patchy Light Snow with Thunder' },
+  395: { icon: 'cloud-lightning', label: 'Moderate/Heavy Snow with Thunder' },
+};
+
+// Unit labels
+export const UNIT_LABELS = {
+  m: {
+    temp: '°C',
+    speed: 'km/h',
+    distance: 'km',
+    pressure: 'mb',
+    precipitation: 'mm',
+  },
+  f: {
+    temp: '°F',
+    speed: 'mph',
+    distance: 'miles',
+    pressure: 'in',
+    precipitation: 'in',
+  },
+  s: {
+    temp: 'K',
+    speed: 'km/h',
+    distance: 'km',
+    pressure: 'mb',
+    precipitation: 'mm',
+  },
+};
+
+// Default locations
+export const DEFAULT_LOCATIONS = [
+  { name: 'New York', country: 'United States' },
+  { name: 'London', country: 'United Kingdom' },
+  { name: 'Tokyo', country: 'Japan' },
+  { name: 'Sydney', country: 'Australia' },
+  { name: 'Paris', country: 'France' },
+  { name: 'Dubai', country: 'United Arab Emirates' },
+];
+
+// Marine condition descriptions
+export const MARINE_CONDITIONS = {
+  calm: { maxHeight: 0.5, description: 'Calm' },
+  light: { maxHeight: 1.25, description: 'Light' },
+  moderate: { maxHeight: 2.5, description: 'Moderate' },
+  rough: { maxHeight: 4, description: 'Rough' },
+  veryRough: { maxHeight: 6, description: 'Very Rough' },
+  high: { maxHeight: 9, description: 'High' },
+  veryHigh: { maxHeight: 14, description: 'Very High' },
+  phenomenal: { maxHeight: Infinity, description: 'Phenomenal' },
+};
