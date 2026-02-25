@@ -10,7 +10,7 @@ import Locations from './pages/Locations';
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [currentLocation, setCurrentLocation] = useState('New York');
+  const [currentLocation, setCurrentLocation] = useState('Bengaluru');
   const [units, setUnits] = useState('m');
   const [forecastDays, setForecastDays] = useState(7);
   const [savedLocations, setSavedLocations] = useState([]);
