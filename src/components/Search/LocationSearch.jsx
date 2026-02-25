@@ -18,11 +18,16 @@ const LocationSearch = ({ onSelect, onClose, recentSearches = [] }) => {
   };
 
   const popularLocations = [
+    { name: 'Bengaluru', country: 'India', region: 'Karnataka' },
+    { name: 'Mumbai', country: 'India', region: 'Maharashtra' },
+    { name: 'Delhi', country: 'India', region: 'Delhi' },
+    { name: 'Chennai', country: 'India', region: 'Tamil Nadu' },
+    { name: 'Kolkata', country: 'India', region: 'West Bengal' },
+    { name: 'Hyderabad', country: 'India', region: 'Telangana' },
+    { name: 'Pune', country: 'India', region: 'Maharashtra' },
     { name: 'New York', country: 'United States', region: 'New York' },
     { name: 'London', country: 'United Kingdom', region: 'City of London' },
     { name: 'Tokyo', country: 'Japan', region: 'Tokyo' },
-    { name: 'Sydney', country: 'Australia', region: 'New South Wales' },
-    { name: 'Paris', country: 'France', region: 'Île-de-France' },
     { name: 'Dubai', country: 'United Arab Emirates', region: 'Dubai' },
   ];
 
@@ -89,8 +94,22 @@ const LocationSearch = ({ onSelect, onClose, recentSearches = [] }) => {
               ))}
             </div>
           ) : query.length >= 2 ? (
-            <div className="p-8 text-center">
-              <p className="text-slate-400">No locations found</p>
+            <div className="p-4">
+              <p className="px-3 py-2 text-xs font-medium text-slate-500 uppercase tracking-wider">
+                No results found
+              </p>
+              <button
+                onClick={() => onSelect(query)}
+                className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-white/5 transition-colors text-left"
+              >
+                <div className="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-cyan-400" />
+                </div>
+                <div>
+                  <p className="font-medium text-slate-200">Use "{query}"</p>
+                  <p className="text-sm text-slate-500">Search with this term</p>
+                </div>
+              </button>
             </div>
           ) : (
             <div className="p-2">
